@@ -24,11 +24,23 @@
 - To execute the project run the following commands in sequence : 
  ```bash
 hive -f create_main_tables.hql 
-hive -f create_data_tables.hql 
+```
+ ```bash
+hive -f create_data_tables.hql
+```
+```bash
 python code.py
+```
+```bash
 hive -f bigdata_import.hql
+```
+```bash
 hive -f analytics_import.hql 
+```
+```bash
 hive -f data_table_import.hql 
+```
+```bash
 python subtables_insert_data.py 
 ```
 
@@ -45,11 +57,11 @@ spark-submit producer.py
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.1 consumer.py
 ```
 ## Scheduled Execution
-- DAG is present in HiveDag.py
+- DAG code is present in HiveDag.py
 ```bash
 start airflow webserver
 start airflow scheduler
 Goto Airflow webserver
 ```
-- DAG will be present by the name HiveDag.py
+- DAG will be present by the name HiveDag
 - Run/Schedule the DAG to execute prediction operation.

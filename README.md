@@ -1,4 +1,6 @@
 # Youtube Analytics
+A Big Data based project on youtube analytics which uses Hadoop , Hive , MySql for Batch processing and Spark for Real-Time processing. The analytics is carried out only on US youtube statistics data and can also be applied on other countries statistics. 
+
 ## Data Flow
 
 <img src = "https://github.com/RahieGadekar10/Youtube_Analytics_Hive/blob/ccbf75811f01148695155c0030dc06b2efc6d083/hive_project.png"> </img>
